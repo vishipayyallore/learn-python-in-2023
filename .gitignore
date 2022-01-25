@@ -348,3 +348,5 @@ MigrationBackup/
 
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
+LearningAlgorithms/sqlitedemos/sqlite_servers.py
+LearningAlgorithms/sqlitedemos/data/servers.db

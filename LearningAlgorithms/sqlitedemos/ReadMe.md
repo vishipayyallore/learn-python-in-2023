@@ -1,0 +1,1 @@
+https://docs.python.org/3.9/library/sqlite3.html?highlight=sqlite#exceptions
