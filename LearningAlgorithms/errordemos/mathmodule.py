@@ -17,6 +17,7 @@ def add_two_numbers(value1: int, value2: int) -> int:
         return value1 + value2
     except TypeError as error:
         print('Error at add_two_numbers()', error)
+        raise
     except:
         print('General Error at divide_two_numbers()')
 

@@ -350,3 +350,4 @@ MigrationBackup/
 .ionide/
 LearningAlgorithms/sqlitedemos/sqlite_servers.py
 LearningAlgorithms/sqlitedemos/data/servers.db
+LearningAlgorithms/sqlitedemos/sqlite_serversdemo.py

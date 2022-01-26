@@ -8,11 +8,11 @@ create_table = 'CREATE TABLE employees (ID INT PRIMARY KEY     NOT NULL, NAME TE
 connection.execute(create_table, )
 """
 
-# insert_data = 'INSERT INTO employees values (101, \'Rajesh\'); '
-# connection.execute(insert_data)
+insert_data = 'INSERT INTO employees values (105, \'Manas\'); '
+connection.execute(insert_data)
 
-# insert_data = 'INSERT INTO employees values (102, \'Manish\'); '
-# connection.execute(insert_data)
+insert_data = 'INSERT INTO employees values (106, "Misbah"); '
+connection.execute(insert_data)
 
 select_data = 'SELECT * FROM employees;'
 datasets = connection.execute(select_data)
