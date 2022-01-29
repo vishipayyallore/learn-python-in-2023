@@ -351,3 +351,5 @@ MigrationBackup/
 LearningAlgorithms/sqlitedemos/sqlite_servers.py
 LearningAlgorithms/sqlitedemos/data/servers.db
 LearningAlgorithms/sqlitedemos/sqlite_serversdemo.py
+LearningAlgorithms/emailsdemo/.env
+PythonBasics/a4_emailsdemo/.env
