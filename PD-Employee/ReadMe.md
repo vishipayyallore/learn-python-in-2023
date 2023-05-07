@@ -4,7 +4,16 @@
 
 To be done
 
-## Installation
+## Few Basic Commands
 
 ```bash
+pip freeze
+```
+
+## Virtual Environment
+
+```bash
+pip install virtualenv
+
+python -m venv pdemployee
 ```
