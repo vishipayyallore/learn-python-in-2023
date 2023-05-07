@@ -15,5 +15,21 @@ pip freeze
 ```bash
 pip install virtualenv
 
-python -m venv pdemployee
+python -m venv pdemployeevenv
+
+pdemployeevenv/Scripts/activate
+
+deactivate
+```
+
+## Install Django and other packages
+
+```bash
+pip install django
+```
+
+## Create Django Project
+
+```bash
+django-admin startproject pdemployee .
 ```
