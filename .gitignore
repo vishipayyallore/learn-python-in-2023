@@ -353,3 +353,5 @@ LearningAlgorithms/sqlitedemos/data/servers.db
 LearningAlgorithms/sqlitedemos/sqlite_serversdemo.py
 LearningAlgorithms/emailsdemo/.env
 PythonBasics/a4_emailsdemo/.env
+PD-Employee/pdemployee/settings.py
+PD-Employee/db.sqlite3

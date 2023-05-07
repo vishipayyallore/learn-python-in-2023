@@ -33,3 +33,8 @@ pip install django
 ```bash
 django-admin startproject pdemployee .
 ```
+
+```bash
+python manage.py migrate
+python manage.py runserver
+```
