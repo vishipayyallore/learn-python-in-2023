@@ -14,3 +14,8 @@ print([1, 2, 3])
 print({})
 print({"name": "John", "age": 20})
 print({'name': 'John', 'age': 20, 'is_manager': True})
+
+print({
+    "name": "John",
+    "age": 20
+})
