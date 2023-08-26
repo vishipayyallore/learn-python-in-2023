@@ -25,11 +25,11 @@ print("Complex Number: ", complex_number, "Type: ", type(complex_number))
 
 # List
 hobbies = ["Reading", "Writing", "Coding"]
-print("Hobbies: ", hobbies, "Type: ", type(hobbies))
+print("List of Hobbies: ", hobbies, "Type: ", type(hobbies))
 
 # Tuple
 hobbies = ("Reading", "Writing", "Coding")
-print("Hobbies: ", hobbies, "Type: ", type(hobbies))
+print("Tuple Hobbies: ", hobbies, "Type: ", type(hobbies))
 
 # Range
 range_numbers = range(10)
@@ -45,11 +45,11 @@ print("Set Numbers: ", set_numbers, "Type: ", type(set_numbers))
 
 # Frozen Set
 hobbies = frozenset({"Reading", "Writing", "Coding"})
-print("Hobbies: ", hobbies, "Type: ", type(hobbies))
+print("Frozen Set Hobbies: ", hobbies, "Type: ", type(hobbies))
 
 # Boolean
 is_active = True
-print("Is Active: ", is_active, "Type: ", type(is_active))
+print("Bool Is Active: ", is_active, "Type: ", type(is_active))
 
 # Binary Data
 binary_data = b"Hello"
