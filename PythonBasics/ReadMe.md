@@ -1,5 +1,9 @@
 # Learn Python Basics
 
+## References
+
+> 1. [https://www.w3schools.com/python/python_datatypes.asp](https://www.w3schools.com/python/python_datatypes.asp)
+
 ## Few Points to Remember
 
 > 1. Python is a case sensitive language.
