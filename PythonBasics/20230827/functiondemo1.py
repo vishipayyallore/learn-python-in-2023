@@ -22,3 +22,8 @@ num2 = 20
 # Function call or Invocation. num1 and num2 are arguments
 print("Sum of", num1, "+", num2, "=", add_two_numbers(num1, num2))
 
+num1 = 100.78
+num2 = 200.84
+
+# Function call or Invocation. num1 and num2 are arguments
+print("Sum of", num1, "+", num2, "=", add_two_numbers(num1, num2))
