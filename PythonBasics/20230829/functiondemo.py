@@ -29,4 +29,5 @@ def main():
     print("The result of say_hello() is", say_hello())
 
 
+# Call the main function.
 main()
