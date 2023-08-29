@@ -15,7 +15,8 @@ def divide_numbers(a, b):
     return a / b
 
 
-def say_hello():  # This function does not return a value. None is returned by default.
+# This function does not return a value. None is returned by default.
+def say_hello():
     print("Hello, world!")
 
 
