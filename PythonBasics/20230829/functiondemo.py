@@ -1,3 +1,10 @@
+"""
+Description: This program demonstrates how to define and call functions.
+Date: 2021-08-29
+Name: functiondemo.py
+Author: Viswanatha Swamy
+"""
+
 
 def multiply_numbers(a, b):
     return a * b
