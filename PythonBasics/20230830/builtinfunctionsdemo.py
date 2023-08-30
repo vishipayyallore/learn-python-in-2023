@@ -5,8 +5,12 @@ print('dir() = ', dir())
 print('__name__ = ', __name__)
 print('dir(__name__) = ', dir(__name__))
 
-# print(__builtins__)
-# print(dir(__builtins__))
+print('__builtins__ = ', __builtins__)
+
+print('dir(__builtins__)', __builtins__)
+
+output = dir(__builtins__)
+print('dir(__builtins__) as output = ', output)
 
 # # abs() - returns the absolute value of a number
 # print(abs(-45))
