@@ -1,5 +1,7 @@
 # Built in functions demo
 
+print('print() = ', print())
+
 print('dir() = ', dir())
 
 print('__name__ = ', __name__)
