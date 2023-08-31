@@ -12,6 +12,8 @@ print('dir(__builtins__)', __builtins__)
 output = dir(__builtins__)
 print('dir(__builtins__) as output = ', output)
 
+print('ArithmeticError = ', ArithmeticError)
+
 # # abs() - returns the absolute value of a number
 # print(abs(-45))
 
