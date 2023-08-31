@@ -1,79 +1,19 @@
-# Built in functions demo
+# Built in functions input() and print()
 
-print('print() = ', print())
+user_name = input("Enter your name: ")
+print("Hello", user_name, type(user_name))
 
-print('dir() = ', dir())
+user_age = input("Enter your age: ")
+print("You are", user_age, "years old", type(user_age))
 
-print('__name__ = ', __name__)
-print('dir(__name__) = ', dir(__name__))
+user_age = int(user_age)
+print("You are", user_age, "years old", type(user_age))
 
-print('__builtins__ = ', __builtins__)
+favortie_number = input("Enter your favorite number: ")
+print("Your favorite number is", favortie_number, type(favortie_number))
 
-print('dir(__builtins__)', __builtins__)
+favortie_number = int(favortie_number)
+print("Your favorite number is", favortie_number, type(favortie_number))
 
-output = dir(__builtins__)
-print('dir(__builtins__) as output = ', output)
-
-print('ArithmeticError = ', ArithmeticError)
-
-# # abs() - returns the absolute value of a number
-# print(abs(-45))
-
-# # all() - returns true if all items in an iterable object are true
-# print(all([1, 2, 3, 4]))
-
-# # any() - returns true if any item in an iterable object is true
-# print(any([0, 1, 2, 3]))
-
-# # ascii() - returns a readable version of an object. Replaces none-ascii characters with escape character
-# x = 'My name is Ståle'
-# print(ascii(x))
-
-# # bin() - returns the binary version of a number
-# print(bin(5))
-
-# # bool() - returns the boolean value of the specified object
-# print(bool(0))
-
-# # bytearray() - returns an array of bytes
-# print(bytearray(5))
-
-# # bytes() - returns a bytes object
-# print(bytes(5))
-
-# # callable() - returns true if the specified object is callable, otherwise false
-# x = 5
-# print(callable(x))
-
-# # chr() - returns a character from the specified Unicode code
-# print(chr(97))
-
-# # classmethod() - converts a method into a class method
-# class Person:
-#     age = 25
-
-#     def printAge(cls):
-#         print('The age is:', cls.age)
-
-# # create printAge class method
-# Person.printAge = classmethod(Person.printAge)
-# Person.printAge()
-
-# # compile() - returns the specified source as an object, ready to be executed
-# x = compile('print(55)', 'test', 'eval')
-# exec(x)
-
-# # complex() - returns a complex number
-# print(complex(5))
-
-# dir() # returns a list of the specified object's properties and methods
-# print(dir())
-
-# # divmod() - returns the quotient and the remainder when argument1 is divided by argument2
-# print(divmod(5, 2))
-
-# # enumerate() - takes a collection (e.g. a tuple) and returns it as an enumerate object
-# x = ('apple', 'banana', 'cherry')
-# y = enumerate(x)
-
-# __builtins__.enumerate(x)
+favorite_color = input("Enter your favorite color: ")
+print("Your favorite color is", favorite_color.upper(), type(favorite_color))
