@@ -21,7 +21,3 @@ def my_function(param1, param2):
 # Calling a function
 my_function(1, 2)
 ```
-
-```
-
-```
