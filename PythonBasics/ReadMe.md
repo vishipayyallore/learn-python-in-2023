@@ -2,7 +2,7 @@
 
 ## References
 
-> 1. [https://www.w3schools.com/python/python_datatypes.asp](https://www.w3schools.com/python/python_datatypes.asp)
+> 1. [https://www.w3schools.com/python/python_variables_output.asp](https://www.w3schools.com/python/python_variables_output.asp)
 
 ## Few Points to Remember
 
@@ -20,8 +20,4 @@ def my_function(param1, param2):
 
 # Calling a function
 my_function(1, 2)
-```
-
-```
-
 ```
