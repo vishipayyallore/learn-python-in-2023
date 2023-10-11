@@ -10,6 +10,8 @@ python -m venv .venv
 .\.venv\Scripts\activate
 
 (.venv)> pip install flask
+
+(.venv)> flask run
 ```
 
 ## Description
