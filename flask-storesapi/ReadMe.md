@@ -12,6 +12,10 @@ python -m venv .venv
 (.venv)> pip install flask
 
 (.venv)> flask run
+
+docker build -t flask-stores .
+
+docker run -p 5000:5000 flask-stores
 ```
 
 ## Description
