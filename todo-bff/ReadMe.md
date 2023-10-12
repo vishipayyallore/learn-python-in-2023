@@ -28,3 +28,19 @@ todo-bff/
 >    - Contains frontend project dependencies and configuration.
 > 1. package.json
 >    - Contains project-level dependencies and scripts.
+
+## Creating Virtual Environment
+
+```bash
+pip install virtualenv
+
+python -m venv .venv
+
+./.venv/Scripts/activate
+
+pip freeze
+
+pip install Flask
+
+deactivate
+```
