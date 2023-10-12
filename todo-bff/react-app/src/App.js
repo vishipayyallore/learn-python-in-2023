@@ -1,23 +1,57 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
 
 function App() {
+  const [todos, setTodos] = useState([]);
+  const [todoText, setTodoText] = useState('');
+
+  useEffect(() => {
+    axios.get('/api/todos')
+      .then(response => setTodos(response.data));
+  }, []);
+
+  const addTodo = () => {
+    axios.post('/api/todos', { text: todoText })
+      .then(() => {
+        setTodoText('');
+        axios.get('/api/todos')
+          .then(response => setTodos(response.data));
+      });
+  };
+
+  const updateTodo = (index, text) => {
+    axios.put(`/api/todos/${index}`, { text: text })
+      .then(() => {
+        axios.get('/api/todos')
+          .then(response => setTodos(response.data));
+      });
+  };
+
+  const deleteTodo = (index) => {
+    axios.delete(`/api/todos/${index}`)
+      .then(() => {
+        axios.get('/api/todos')
+          .then(response => setTodos(response.data));
+      });
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>TODO App</h1>
+      <input type="text" value={todoText} onChange={(e) => setTodoText(e.target.value)} />
+      <button onClick={addTodo}>Add</button>
+      <ul>
+        {todos.map((todo, index) => (
+          <li key={index}>
+            <input
+              type="text"
+              value={todo.text}
+              onChange={(e) => updateTodo(index, e.target.value)}
+            />
+            <button onClick={() => deleteTodo(index)}>Delete</button>
+          </li>
+        ))}
+      </ul>
     </div>
   );
 }
