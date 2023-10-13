@@ -15,7 +15,7 @@ python -m venv .venv
 
 docker build -t flask-stores .
 
-docker run -p 5000:5000 flask-stores
+docker run -dp 5000:5000 flask-stores
 ```
 
 ## Description
