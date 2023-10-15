@@ -10,6 +10,8 @@ python -m venv .venv
 .\.venv\Scripts\activate
 
 (.venv)> pip install flask
+(.venv)> pip install openai
+(.venv)> pip install python-dotenv
 
 (.venv)> flask run
 
