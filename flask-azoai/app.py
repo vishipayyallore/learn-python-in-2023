@@ -1,9 +1,9 @@
 import os
 import openai
 from flask import Flask, request, render_template
+from dotenv import dotenv_values
 
 # Load config values
-from dotenv import dotenv_values
 config_details = dotenv_values(".env")
 
 openai.api_type = "azure"
@@ -23,10 +23,13 @@ def index():
 def get_completion_response():
     userText = request.args.get('msg')
     print("User Text: ", userText)
-    user_prompt = "Tell me a joke on software engineering.\n\n"
+    response = generate_response(userText)
+    return str(response)
 
-    print('Azure Open AI Key: ', openai.api_key)
 
+def generate_response(user_input):
+    # Include user input in the prompt
+    user_prompt = f"User Input: {user_input}\n\n"
     try:
         response = openai.Completion.create(
             engine=config_details['COMPLETIONS_MODEL'],
@@ -36,13 +39,14 @@ def get_completion_response():
             top_p=0.5,
             frequency_penalty=0,
             presence_penalty=0,
-            stop=None)
-
+            stop=None
+        )
         answer = response.choices[0].text
-        return str(answer)
-    except:
-        print("An exception has occurred. \n")
-        # print("Error Message:", response)
+        return answer
+    except Exception as e:
+        # Proper error handling and logging
+        print("An exception has occurred:", str(e))
+        return "An error occurred while processing the request."
 
 
 if __name__ == "__main__":
