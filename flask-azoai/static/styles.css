@@ -18,4 +18,6 @@ body {
 .list-group-item {
     border-radius: 5px;
     background-color: #093786;
+    color: white;
+    margin: 5px;
 }
