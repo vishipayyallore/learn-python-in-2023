@@ -4,3 +4,18 @@
     font-family: 'Montserrat', sans-serif;
     font-family: 'Poppins', sans-serif;
 }
+
+body {
+    color: navy;
+}
+
+#chat {
+    height: 400px;
+    overflow-y: scroll;
+    background-color: #bad2fa;
+}
+
+.list-group-item {
+    border-radius: 5px;
+    background-color: #093786;
+}
