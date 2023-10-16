@@ -21,6 +21,7 @@ function generateResponse() {
         .catch(error => {
             console.error("An error occurred:", error);
             responseContainer.innerText = "An error occurred while processing the request.";
+            chatList.innerHTML += `<li class="list-group-azoaiitem"><b>OpenAI:</b> An error occurred while processing the request.</li>`;
         });
 }
 
