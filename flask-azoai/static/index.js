@@ -10,6 +10,9 @@ function generateResponse() {
     fetch("/api/get?msg=" + userInput)
         .then(response => response.text())
         .then(data => {
+            // Process the response to remove <br> tags
+            data = processResponse(data);
+
             // Append the AI's response to the chat
             chatList.innerHTML += `<li class="list-group-azoaiitem"><b>OpenAI:</b> ${data}</li>`;
             console.log("Success:", data);
@@ -19,4 +22,11 @@ function generateResponse() {
             console.error("An error occurred:", error);
             responseContainer.innerText = "An error occurred while processing the request.";
         });
+}
+
+// Process the API response and remove unwanted <br> tags
+function processResponse(data) {
+    // Remove leading <br> tags and trim the response
+    data = data.replace(/^<br>/g, '').trim();
+    return data;
 }
