@@ -15,9 +15,16 @@ body {
     background-color: #bad2fa;
 }
 
-.list-group-item {
+.list-group-useritem {
     border-radius: 5px;
     background-color: #093786;
     color: white;
+    margin: 5px;
+}
+
+.list-group-azoaiitem {
+    border-radius: 5px;
+    background-color: white;
+    color: #093786;
     margin: 5px;
 }
