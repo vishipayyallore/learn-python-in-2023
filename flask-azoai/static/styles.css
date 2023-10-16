@@ -12,12 +12,12 @@ body {
 #chat {
     height: 400px;
     overflow-y: scroll;
-    background-color: #bad2fa;
+    background-color: #d5e2f9;
 }
 
 .list-group-useritem {
     border-radius: 5px;
-    background-color: #093786;
+    background-color: #0b5ed7;
     color: white;
     margin: 5px;
 }
@@ -25,6 +25,10 @@ body {
 .list-group-azoaiitem {
     border-radius: 5px;
     background-color: white;
-    color: #093786;
+    color: #0b5ed7;
     margin: 5px;
+}
+
+.title-styles {
+    color: rgb(14, 113, 242);
 }
