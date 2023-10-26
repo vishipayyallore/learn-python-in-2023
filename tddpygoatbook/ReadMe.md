@@ -20,4 +20,10 @@ python -c "from selenium import webdriver; webdriver.Firefox()"
 python ./functional_tests.py
 
 django-admin startproject superlists .
+
+git status
+git diff
+
+git add .
+git commit -m "First commit"
 ```
