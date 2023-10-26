@@ -22,4 +22,8 @@ django-admin startproject account_example
 python manage.py runserver
 
 python manage.py startapp example
+
+python manage.py makemigrations
+
+python manage.py migrate
 ```
