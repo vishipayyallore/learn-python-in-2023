@@ -18,4 +18,8 @@ python.exe -m pip install --upgrade pip
 django-admin --version
 
 django-admin startproject account_example
+
+python manage.py runserver
+
+py manage.py startapp example
 ```
