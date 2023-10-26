@@ -1,6 +1,6 @@
 # Sample Python Django Project
 
-I am learning Python from different sources (Books, Web Sites, Video Courses, etc.) in 2022
+I am going to use this repository to keep my sample Python Django Project.
 
 ## Python Django Project
 
@@ -21,5 +21,5 @@ django-admin startproject account_example
 
 python manage.py runserver
 
-py manage.py startapp example
+python manage.py startapp example
 ```

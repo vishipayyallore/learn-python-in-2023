@@ -16,7 +16,61 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from django.http import HttpResponse
+from django.views.decorators.csrf import csrf_exempt
+from django import forms
+from django.shortcuts import render
+
+import logging
+
+
+class CheckForm(forms.Form):
+    mycheckbox = forms.BooleanField(required=False)
+
+
+logger = logging.getLogger(__name__)
+
+
+def my_view(request):
+    logger.info('Testing condition')
+    logger.warning('Something bad happened')
+    return HttpResponse(200)
+
+
+def other_view(request, parameter):
+    print(request.method)
+    logger.warning(f'Other view {parameter} {type(parameter)}')
+    if request.method == 'POST':
+        logger.warning(f'POST {request.POST}')
+    logger.warning(f'{request.method}')
+    return HttpResponse(200)
+
+
+def third_view(request, parameter):
+    logger.warning(f'Other third view {parameter} {type(parameter)}')
+    return HttpResponse(200)
+
+
+def form_view(request):
+    form = CheckForm()
+    if request.method == 'POST':
+        logger.warning(f'POST {request.POST}')
+
+    if request.method == 'GET':
+        logger.warning(f'GET {request.GET}')
+        logger.warning(f'{request.GET["param1"]}')
+        logger.warning(f'{request.GET["param2"]}')
+        logger.warning(f'{request.GET.getlist("param1")}')
+        logger.warning(f'{request.headers}')
+        logger.warning(f'{request.META}')
+
+    return render(request, 'form.html', {'form': form})
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('form/', form_view),
+    path('something/', my_view),
+    path('something/<int:parameter>', other_view),
+    path('something/<str:parameter>', third_view),
 ]
