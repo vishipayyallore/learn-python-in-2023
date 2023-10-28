@@ -23,11 +23,15 @@ django-admin startproject superlists .
 
 git status
 git diff
+git diff -w
 
 git add .
+git commit -a # The -a means “automatically add any changes to tracked files
 git commit -m "First commit"
 
 python manage.py startapp lists
 
 python manage.py test
+
+python manage.py runserver
 ```

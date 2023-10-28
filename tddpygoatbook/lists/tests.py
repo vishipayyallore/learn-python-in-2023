@@ -14,6 +14,16 @@ class HomePageTest(TestCase):
         self.assertTrue(html.startswith("<html>"))
         self.assertTrue(html.endswith("</html>"))
 
+    def test_home_page_returns_correct_html_2(self):
+        response = self.client.get("/")
+        self.assertContains(response, "<title>To-Do lists</title>")
+
+    def test_home_page_returns_correct_html_original(self):
+        response = self.client.get("/")
+        self.assertContains(response, "<title>To-Do lists</title>")
+        self.assertContains(response, "<html>")
+        self.assertContains(response, "</html>")
+
 
 class SmokeTest(TestCase):
     def test_bad_maths(self):
