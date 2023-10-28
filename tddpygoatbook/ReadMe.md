@@ -26,4 +26,6 @@ git diff
 
 git add .
 git commit -m "First commit"
+
+python manage.py startapp lists
 ```
