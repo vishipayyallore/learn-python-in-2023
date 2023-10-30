@@ -1,6 +1,4 @@
 from django.test import TestCase
-from django.http import HttpRequest
-from lists.views import home_page
 
 # Create your tests here.
 
@@ -16,6 +14,15 @@ class HomePageTest(TestCase):
         self.assertContains(response, "<html>")
         self.assertContains(response, "</html>")
         self.assertTemplateUsed(response, "home.html")
+
+
+class SmokeTest(TestCase):
+    def test_bad_maths(self):
+        self.assertEqual(1 + 2, 3)
+
+
+# from django.http import HttpRequest
+# from lists.views import home_page
 
     # def test_home_page_returns_correct_html_2(self):
     #     response = self.client.get("/")
@@ -34,8 +41,3 @@ class HomePageTest(TestCase):
     #     self.assertIn("<title>To-Do lists</title>", html)
     #     self.assertTrue(html.startswith("<html>"))
     #     self.assertTrue(html.endswith("</html>"))
-
-
-class SmokeTest(TestCase):
-    def test_bad_maths(self):
-        self.assertEqual(1 + 2, 3)
