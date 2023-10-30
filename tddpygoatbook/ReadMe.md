@@ -40,4 +40,6 @@ python manage.py startapp lists
 python manage.py test
 
 python manage.py runserver
+
+python manage.py makemigrations
 ```
