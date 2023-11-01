@@ -44,4 +44,7 @@ python manage.py runserver
 python manage.py makemigrations
 
 python manage.py migrate
+
+rm db.sqlite3
+python manage.py migrate --noinput
 ```
