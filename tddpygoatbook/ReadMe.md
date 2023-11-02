@@ -47,4 +47,8 @@ python manage.py migrate
 
 rm db.sqlite3
 python manage.py migrate --noinput
+
+python manage.py test # Executes both Unit and Functional Tests
+python manage.py test .\functional_tests\
+python manage.py test .\lists\
 ```
