@@ -1,5 +1,7 @@
 # TDD Python
 
+I am learning the TDD with Python book. I am using the book to learn the TDD process and the Python language. The book is worderful and I am enjoying the process.
+
 ## Few Commands
 
 > 1. We are using git bash for windows
@@ -47,4 +49,8 @@ python manage.py migrate
 
 rm db.sqlite3
 python manage.py migrate --noinput
+
+python manage.py test # Executes both Unit and Functional Tests
+python manage.py test .\functional_tests\
+python manage.py test .\lists\
 ```
