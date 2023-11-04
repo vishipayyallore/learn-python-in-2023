@@ -62,6 +62,7 @@ class NewVisitorTest(LiveServerTestCase):
         edith_list_url = self.browser.current_url
         self.assertRegex(edith_list_url, "/lists/.+")
 
+        # We delete all the browser's cookies as a way of simulating a brand new user session (Meta Comments)
         self.browser.delete_all_cookies()
 
         # 2nd user visits the home page.  There is no sign of Edith's
